@@ -44,11 +44,11 @@ header{
 .cursos-grid article{
     background: #eee5e9;
     border: none;
-    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0,3);
     border-radius: 20px;
     text-align: center;
     width: 250px;
     transition: transform .3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 .cursos-grid article:hover{
     transform: translateY(5px);
@@ -83,31 +83,58 @@ header{
 
 /*Files*/
 
-.body-files{
-    background-color: #282c34;
-    font-family:'Nunito', sans-serif;
-    font-size: 3rem;
-
-}
-.grid-conatiner-files{
-    display: flex;
+.files-books{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
     align-items: center;
-    justify-content: center;
-    background-color: #03afff;
-    border-radius: 4px;
-    transition: 0.3s ease-in-out;
-    border:solid 1px rgb(226, 226, 226)
-    
+    box-shadow:  2px #282c34;
 }
-.grid-conatiner-files:hover{
-    filter: opacity(0.9);
-    transform: scale(1,04);
+.files-books article{
+    background: #eee5e9;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform .3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.files-books article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0,3);
+}
+.files-books article img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.contenido{
+    padding: 0px 20px 20px;
+}
+.contenido h3{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.contenido button{
+    background: blueviolet;
+    border-radius: 20px;
+    border: none;
+    color:whitesmoke;
+    padding: 10px;
+    width: 110px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.titulo-files{
+    font-size: 14px;
 }
 
 @media (max-width: 768px){
 
-    .cursos-grid{
-        grid-template-columns: repeat(2,1fr);
+    .files-books{
+        grid-template-columns: repeat(2,2fr);
     }
 
 }  
@@ -116,7 +143,7 @@ header{
 
 @media (min-width:500px){
 
-    .cursos-grid{
+    .files-books{
         grid-template-columns: reapeat(1,1fr);
     }
 
@@ -124,40 +151,10 @@ header{
 
 .cursos-grid article{
     text-align: center;
-
 }
 
 /*Files*/
 
-.grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #03afff;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.grid-item:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-.grid-conatiner img{
-    grid-template-columns: repeat(2,2fr);
-}
-.grid-container {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
-    padding: 20px;
-    grid-auto-flow: dense;
-}
 /*VERSION MOBILE*/
 
 @media (min-width: 600px) {
@@ -178,7 +175,8 @@ footer {
     background: linear-gradient(90deg, rgba(30,52,179,1) 37%, rgba(221,69,69,1) 100%);
     color: whitesmoke;
     text-align:center;
-    position: sticky;
+    position: static;
+    background-size: cover;
     padding: 40px;
 }
 .container-footer .rrssIconos{
@@ -204,7 +202,6 @@ footer {
 }
 
 .rrssIconos{
-    
     transition: .3s;
 }
 
@@ -214,7 +211,11 @@ footer {
     border-radius: 50%;
     }
 
-
+@media (min-width: 500px){
+    footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
 
 
