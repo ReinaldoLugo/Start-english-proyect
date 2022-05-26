@@ -4,33 +4,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
 }
 /*Navbar*/
-header{
-    height: 100px;
-    position: absolute;
-}
 .navbar{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid{
     background: rgb(30,52,179);
     background: linear-gradient(90deg, rgba(30,52,179,1) 37%, rgba(221,69,69,1) 100%);
-    padding: 0px 40px;
-}
-.logo-start{
-    width: 100px;
-}
-.navbar-brand a{
+    
+}  
+.navbar-brand{
     color: whitesmoke;
-    list-style-type: none;
-    font-size: 40px;
-    font-weight: 700;
-    text-decoration: none;
+    font-size: 35px;
+    padding-left: 80px;
+    padding-right: 100px;
+    font-weight: bold;
+}
+/*
+.nav ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+*/
+.navbar ul li a {
+    color: whitesmoke;
+    font-size: 17px;
+    text-transform: uppercase;
 }
 
-.offcanvas{
-    color: whitesmoke;
-    font-size: 20px;
-    font-weight: 600;
+.nav-link a.active,a:hover{
+    background: blueviolet;
+    transition: .5s;
 }
+
+
 /*courses*/
 
 .cursos-grid{
@@ -42,22 +58,22 @@ header{
     box-shadow:  2px #282c34;
 }
 .cursos-grid article{
-    background: #eee5e9;
+    background-color: whitesmoke;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
     width: 250px;
     transition: transform .3s;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
+    }
 .cursos-grid article:hover{
     transform: translateY(5px);
     box-shadow: 2px 2px 26px 0px rgba(0,0,0,0,3);
+    
 }
 .cursos-grid article img{
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .text{
     padding: 0px 20px 20px;
@@ -77,9 +93,45 @@ header{
     text-transform: uppercase;
     cursor: pointer;
 }
-.tituloButton{
+.text button {
     font-size: 14px;
 }
+
+@media (max-width: 768px){
+
+    .cursos-grid{
+        grid-template-columns: repeat(2,2fr);
+    }
+
+}  
+
+/*MOBILE VERSION*/
+
+@media (min-width:500px){
+
+    .cursos-grid{
+        grid-template-columns: reapeat(1,1fr);
+    }
+}
+
+.cursos-grid article{
+    text-align: center;
+}
+
+/*Files*/
+
+/*VERSION MOBILE*/
+
+@media (min-width: 600px) {
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+}
+
 
 /*Files*/
 
@@ -90,9 +142,11 @@ header{
     grid-gap: 30px;
     align-items: center;
     box-shadow:  2px #282c34;
+
 }
+
 .files-books article{
-    background: #eee5e9;
+    background-color:whitesmoke;
     border: none;
     border-radius: 20px;
     text-align: center;
@@ -146,10 +200,9 @@ header{
     .files-books{
         grid-template-columns: reapeat(1,1fr);
     }
-
 }
 
-.cursos-grid article{
+.files-books article{
     text-align: center;
 }
 
@@ -167,9 +220,16 @@ header{
 }
 }
 
-/*footer*/
+/*Nosotros*/
+.container-form{
+    margin-bottom: 100px;
+    background: rgb(30,52,179);
+    background: linear-gradient(90deg, rgba(30,52,179,1) 37%, rgba(221,69,69,1) 100%);
+    justify-content: center;
 
-footer {
+}
+/*footer*/
+.py-5{
     width: 100%;
     background: rgb(30,52,179);
     background: linear-gradient(90deg, rgba(30,52,179,1) 37%, rgba(221,69,69,1) 100%);
@@ -177,39 +237,24 @@ footer {
     text-align:center;
     position: static;
     background-size: cover;
-    padding: 40px;
+    padding: 10px;
 }
-.container-footer .rrssIconos{
-    padding: 10px 20px;
-
+.row{
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
 }
-.rrss {
-    font-size: 18px;
-    font-weight: 200;
-    color: whitesmoke;
-    font-family:'Nunito', sans-serif;
+.redes-sociales{
+    justify-items: center;
 }
-
-.footer1 {
-    font-size: 16px;
-    font-weight: 100;
-    color: whitesmoke;
-    box-shadow: #282c34;
+.list{
+    display: flex;
+    justify-content:center;
+    
 }
-
-.footer2 {
-    color: whitesmoke;
+.copyrithg{
+    justify-content: center;
 }
-
-.rrssIconos{
-    transition: .3s;
-}
-
-.rrssIconos:hover{
-    transform: translateY(5px);
-    box-shadow: #282c34;
-    border-radius: 50%;
-    }
 
 @media (min-width: 500px){
     footer{

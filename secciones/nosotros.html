@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,90 +12,91 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <div class="navbar-brand">
-                    <img class="logo-start" src="../imagenes/start-english-logo.png" alt="logo start english">
-                    <a  href="../index.html">Startenglish</a>
-                </div>
-                
-                <button class= "navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/start-english-logo.png" alt="Start english logo" width="100" height="100" class="d-inline-block align-text-center">
+                    Start English
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="../secciones/files.html">Files</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="../secciones/courses.html">courses</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="../secciones/servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../secciones/files.html">Files</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../secciones/courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../secciones/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../secciones/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-    </header> 
+    </header>
+
+    <main class="container-form">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime aliquam nisi, eaque nam libero placeat ex minima sit beatae fuga amet dignissimos, obcaecati praesentium tempore. Quia dolore error quas!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime aliquam nisi, eaque nam libero placeat ex minima sit beatae fuga amet dignissimos, obcaecati praesentium tempore. Quia dolore error quas!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime aliquam nisi, eaque nam libero placeat ex minima sit beatae fuga amet dignissimos, obcaecati praesentium tempore. Quia dolore error quas!</p>
+        <section class="container-form">
+            <form>
+                <fieldset disabled>
+                    <legend>Disabled fieldset example</legend>
+                    <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">Disabled input</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                    </div>
+                    <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                        <select id="disabledSelect" class="form-select">
+                        <option>Disabled select</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                        <label class="form-check-label" for="disabledFieldsetCheck">
+                            Can't check this
+                        </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="py-5">
+        <div class="container-footer">
+            <div class="redes-sociales">
+                <h5>Siguenos en nuestras Redes Sociales</h5>
+                <ul class="list">
+                    <li class="ms-3 active">
+                        <a href=""></a>
+                        <img src="../imagenes/Whatsapp-blanco.png" alt="Whatsapp"width="40px">
+                    <li class="ms-3 active"><img src="../imagenes/facebook-blanco.png" alt="facebook"width="40px">
+                    <li class="ms-3 active"><img src="../imagenes/gmail-50.png"alt="gmail"width="40px"> 
+                </ul>
+            </div>
+            <div class="coyrithg">
+            <p>&copy; 2022 Start english. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
-        <section>
-            <h1 class="tituloUno">Contacto</h1>
-                <figure>
-                    <img src="../imagenes/Start english.png" alt="strat english logo">
-                        <figcaption>Logo Starenglish</figcaption>
-                </figure>
-        </section>
-
-        <section>
-            <article>
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="persona@.....">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Name/Nombre</label>
-                            <input type="password" class="form-control" id="">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Last name/Apellido</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Phone number/ Número telefónico </label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="011-5891....">
-                    </div>
-                </form>
-            </article>
-        </section>
-
-        <footer>
-            <h3 class="rrss">Seguinos en nuestras redes sociales:</h3>
-                <div class="container-footer">
-                    <a href="https://www.instagram.com/giacomello.ok/" target="_blank">
-                        <img src="../imagenes/instagram-blanco.png" class="rrssIconos" alt="Instagram"></a>
-                    <a href="https://www.fb.com/" target="_blank">
-                        <img src="../imagenes/facebook-blanco.png" class="rrssIconos" alt="Facebook"></a>
-                    <a href="https://www.gmail.com/" target="_blank">
-                        <img src="../imagenes/gmail-50.png" class="rrssIconos" alt="Gmail"></a>
-                    <a href="https://www.whatsapp.com/" target="_blank">
-                        <img src="../imagenes/Whatsapp-blanco.png" class="rrssIconos" alt="Whatsapp"></a>
-                </div>                   
-                <div>    
-                    <p class="footer1"> Start english - 2022</p>
-                </div>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>
