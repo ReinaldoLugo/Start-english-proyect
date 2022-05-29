@@ -8,6 +8,20 @@
     list-style: none;
     
 }
+/*Index*/
+
+
+.tituloUno{
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: #282c34;
+    margin-top: 20px;
+    background-color: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 /*Navbar*/
 .navbar{
     padding: 0;
@@ -21,23 +35,20 @@
 .navbar-brand{
     color: whitesmoke;
     font-size: 35px;
-    padding-left: 80px;
-    padding-right: 100px;
     font-weight: bold;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
 }
-/*
-.nav ul{
-    float: right;
-    margin-right: 20px;
+
+.navbar navbar-expand-lg bg-ligh{
+    text-align: end;
 }
-.navbar ul li{
-    display:inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-*/
+
 .navbar ul li a {
+    font-family: 'Nunito', sans-serif;
     color: whitesmoke;
-    font-size: 17px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -46,16 +57,97 @@
     transition: .5s;
 }
 
+/*Files*/
 
-/*courses*/
-
-.cursos-grid{
-    margin: 80px;
+.files-books{
+    padding-left: 30px;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
-    align-items: center;
+    justify-content: space-evenly;
     box-shadow:  2px #282c34;
+}
+
+.files-books article{
+    background-color:whitesmoke;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform .3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.files-books article:hover{
+    transform: translateY(5px);
+    
+}
+.files-books article img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.contenido{
+    padding: 0px 20px 20px;
+}
+.contenido h3{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.contenido button{
+    background: blueviolet;
+    border-radius: 20px;
+    border: none;
+    color:whitesmoke;
+    padding: 10px;
+    width: 110px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.titulo-files{
+    font-size: 14px;
+}
+.files-books article{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1200px){
+
+    .files-books{
+        grid-template-columns: repeat(2,2fr);
+    }
+    .files-books{ 
+        padding-left: 120px;
+    }
+}  
+
+/*MOBILE VERSION*/
+
+@media only screen and (min-width:400px) and (max-width: 767px){
+
+    .files-books{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+
+/*courses*/
+
+.main-courses{ 
+    margin: 20px;
+}
+.cursos-grid{
+    margin: 50px 0;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    align-items: center;
+    box-shadow: 2px #282c34;
 }
 .cursos-grid article{
     background-color: whitesmoke;
@@ -64,10 +156,10 @@
     text-align: center;
     width: 250px;
     transition: transform .3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
 .cursos-grid article:hover{
     transform: translateY(5px);
-    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0,3);
     
 }
 .cursos-grid article img{
@@ -97,137 +189,80 @@
     font-size: 14px;
 }
 
-@media (max-width: 768px){
+@media only screen and (min-width:768px) and (max-width: 1200px){
 
     .cursos-grid{
         grid-template-columns: repeat(2,2fr);
     }
-
-}  
-
+    .cursos-grid{
+        padding-left: 150px;
+        
+    }
+}   
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    
+    .cursos-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cursos-grid {
+        padding: 50px;
+        padding-left: 50px;
+    } 
+}
 /*MOBILE VERSION*/
 
-@media (min-width:500px){
+@media only screen and (min-width: 400px)and (max-width: 575px){
 
     .cursos-grid{
-        grid-template-columns: reapeat(1,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
+    .cursos-grid{
+        padding-left: 80px;
+    }   
+
 }
 
-.cursos-grid article{
-    text-align: center;
-}
+/*Servicios*/
 
-/*Files*/
-
-/*VERSION MOBILE*/
-
-@media (min-width: 600px) {
-.wide {
-    grid-column: span 2;
-}
-
-.tall {
-    grid-row: span 2;
-}
-}
-
-
-/*Files*/
-
-.files-books{
-    margin: 80px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 30px;
+.slide{
+    background-color:rgba(0, 0, 0, 0.07);
     align-items: center;
-    box-shadow:  2px #282c34;
+    padding: 50px 200px 50px 200px;
+    font-family: 'Nunito', sans-serif;
 
 }
-
-.files-books article{
-    background-color:whitesmoke;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    width: 250px;
-    transition: transform .3s;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+.slide img{
+    height: 10vh;
+    min-height: 400px;
+    background: no-repeat center center scroll;
 }
-.files-books article:hover{
-    transform: translateY(5px);
-    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0,3);
+.carousel-caption{
+    padding: 0px;
 }
-.files-books article img{
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.contenido{
-    padding: 0px 20px 20px;
-}
-.contenido h3{
-    text-transform: uppercase;
+.carousel-item p{
     font-size: 18px;
+    color: whitesmoke;
 }
-.contenido button{
-    background: blueviolet;
-    border-radius: 20px;
-    border: none;
-    color:whitesmoke;
-    padding: 10px;
-    width: 110px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-.titulo-files{
-    font-size: 14px;
-}
+.carousel-item h2{
+    color: whitesmoke;
+    font-size: 25px;
+}   
 
-@media (max-width: 768px){
-
-    .files-books{
-        grid-template-columns: repeat(2,2fr);
-    }
-
-}  
-
-/*MOBILE VERSION*/
-
-@media (min-width:500px){
-
-    .files-books{
-        grid-template-columns: reapeat(1,1fr);
-    }
-}
-
-.files-books article{
-    text-align: center;
-}
-
-/*Files*/
-
-/*VERSION MOBILE*/
-
-@media (min-width: 600px) {
-.wide {
-    grid-column: span 2;
-}
-
-.tall {
-    grid-row: span 2;
-}
-}
 
 /*Nosotros*/
-.container-form{
-    margin-bottom: 100px;
-    background: rgb(30,52,179);
-    background: linear-gradient(90deg, rgba(30,52,179,1) 37%, rgba(221,69,69,1) 100%);
+form{
+    padding: 50px 50px 50px 50px;
+    margin: 50px 50px;
+    background-color: white;
     justify-content: center;
-
+    border-radius: 15px;
 }
+
+.form .action{
+    background-color: black;
+}
+
+
 /*footer*/
 .py-5{
     width: 100%;
@@ -236,7 +271,6 @@
     color: whitesmoke;
     text-align:center;
     position: static;
-    background-size: cover;
     padding: 10px;
 }
 .row{
@@ -252,32 +286,23 @@
     justify-content:center;
     
 }
+.list img:hover{
+    transform: translateY(5px);
+    background-color: blueviolet;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.list img{
+    transition: .0,2s;
+}
+
 .copyrithg{
     justify-content: center;
 }
 
-@media (min-width: 500px){
+
+@media only screen and (max-width: 768px){
     footer{
         grid-template-columns: repeat(2,1fr);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

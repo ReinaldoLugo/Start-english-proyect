@@ -14,15 +14,15 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="/imagenes/start-english-logo.png" alt="Start english logo" width="100" height="100" class="d-inline-block align-text-center">
+                <a class="navbar-brand me-auto" href="./index.html">
+                    <img src="../imagenes/start-english-logo.png" alt="Start english logo" width="100" height="100" class="d-inline-block">
                     Start English
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
@@ -44,10 +44,56 @@
         </nav>
     </header>
 
+    <main>
+        <h1 class="tituloUno">Welcome to your english classes</h1>
+        <section> <!--Carrousel-->
+                <div  id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./imagenes/carousel_index1.png" class="d-block w-100" alt="aprendiendo ingles">
+                        </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/carousel2_learne.png" class="d-block w-100" alt="profesor de ingles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/carousel3_index3.png" class="d-block w-100" alt="estudiante de ingles">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>  
+        </section>
 
+        <section>
+            <div class="p_inicio">
+                <p>Start English, es un programa avanzado en ingles, que aplica metodos interactivos, dinámicos y específicos para tu desarrollo como fúturo bilingue.</p>
+            </div>
+        </section>
+        <!-- Section 2 --> <!-- Video de Youtube -->
+        <section>
+            <div class="Container text-center">
+                <div class="ratioVideo ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PDllC05gXAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        </section>
+        </section>
+        
+    </main>
+    <!--
         <main>
             <section>
-                <h1 class="tituloUno">Welcome to your english classes</h1>
+                
                     <p class="primerParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam dolore
                         similique. Placeat, vel! Officia ullam hic, nesciunt nemo quasi nihil eius ex eveniet repellat omnis vel
                         quis enim nulla?</p>
@@ -69,25 +115,20 @@
                         <img src="./imagenes/nuestro metodo.png" alt="metodo de ingles" class="metodosdeIngles">
                     <figcaption>método de 4 formas para aprender inglés</figcaption>
                 </figure>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fwREtMmkVPA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
             </section>
         </main>
+    -->
+
+
 
         <footer class="py-5">
             <div class="container-footer">
                 <div class="redes-sociales">
                     <h5>Siguenos en nuestras Redes Sociales</h5>
                     <ul class="list">
-                        <li class="ms-3 active">
-                            <a href=""></a>
-                            <img src="./imagenes/Whatsapp-blanco.png" alt="Whatsapp"width="40px">
-                        <li class="ms-3 active"><img src="./imagenes/facebook-blanco.png" alt="facebook"width="40px">
-                        <li class="ms-3 active"><img src="./imagenes/gmail-50.png"alt="gmail"width="40px"> 
+                        <li class="ms-3 active"><a href=""></a><img class="active" src="./imagenes/Whatsapp-blanco.png" alt="Whatsapp"width="40px">
+                        <li class="ms-3 active"><a href=""></a> <img class="active" src="./imagenes/facebook-blanco.png" alt="facebook"width="40px">
+                        <li class="ms-3 active"><a href=""></a> <img class="active" src="./imagenes/gmail-50.png"alt="gmail"width="40px"> 
                     </ul>
                 </div>
                 <div class="coyrithg">
