@@ -12,6 +12,7 @@
 
 
 .tituloUno{
+    margin-top: 20px;
     font-family: 'Nunito', sans-serif;
     font-size: 35px;
     text-align: center;
@@ -22,14 +23,26 @@
     list-style-type: none;
 }
 
+@media only screen and (min-width: 400px) and (max-width:576px){
+    .ratioVideo{
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:768px){
+    .slide img{
+        height: 5vh;
+        min-height: 300pxs;
+        width: 300px;    
+    }
+}    
 /*Navbar*/
 .navbar{
     padding: 0;
     margin: 0;
 }
 .container-fluid{
-    background: rgb(30,52,179);
-    background: linear-gradient(90deg, rgba(30,52,179,1) 37%, rgba(221,69,69,1) 100%);
+    background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
     
 }  
 .navbar-brand{
@@ -44,13 +57,14 @@
 .navbar navbar-expand-lg bg-ligh{
     text-align: end;
 }
-
-.navbar ul li a {
+a.nav-link.active{
+    font-weight: 200;
     font-family: 'Nunito', sans-serif;
-    color: whitesmoke;
+    text-decoration: whitesmoke;
     font-size: 20px;
     text-transform: uppercase;
 }
+
 
 .nav-link a.active,a:hover{
     background: blueviolet;
@@ -225,15 +239,15 @@
 /*Servicios*/
 
 .slide{
-    background-color:rgba(0, 0, 0, 0.07);
+    background-color:transparent;
     align-items: center;
-    padding: 50px 200px 50px 200px;
+    padding: 20px 100px 0px 100px;
     font-family: 'Nunito', sans-serif;
 
 }
 .slide img{
-    height: 10vh;
-    min-height: 400px;
+    height: 20vh;
+    min-height: 600px;
     background: no-repeat center center scroll;
 }
 .carousel-caption{
@@ -266,8 +280,7 @@ form{
 /*footer*/
 .py-5{
     width: 100%;
-    background: rgb(30,52,179);
-    background: linear-gradient(90deg, rgba(30,52,179,1) 37%, rgba(221,69,69,1) 100%);
+    background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
     color: whitesmoke;
     text-align:center;
     position: static;
@@ -293,7 +306,7 @@ form{
     cursor: pointer;
 }
 .list img{
-    transition: .0,2s;
+    transition: .3s;
 }
 
 .copyrithg{
@@ -306,3 +319,12 @@ form{
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+
+
+
+
+
+
+
+
