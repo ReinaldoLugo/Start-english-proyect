@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*Index*/
+.tituloUno {
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: #282c34;
+  margin-top: 20px;
+  background-color: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 576px) {
+  .ratioVideo {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .slide img {
+    height: 5vh;
+    min-height: 300pxs;
+    width: 300px;
+  }
+}
+
+/*Navbar*/
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #b665ff), color-stop(25%, #7b55ff), color-stop(50%, #2e43ff), color-stop(75%, #0032d6), to(#0023b0));
+  background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
+}
+
+.navbar-brand {
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: inline-block;
+}
+
+.navbar navbar-expand-lg bg-ligh {
+  text-align: end;
+}
+
+a.nav-link.active {
+  font-weight: 200;
+  font-family: 'Nunito', sans-serif;
+  -webkit-text-decoration: whitesmoke;
+          text-decoration: whitesmoke;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav-link a.active, a:hover {
+  background: blueviolet;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*Files*/
+.files-books {
+  padding-left: 30px;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 2px #282c34;
+          box-shadow: 2px #282c34;
+}
+
+.files-books article {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.files-books article:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.files-books article img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contenido {
+  padding: 0px 20px 20px;
+}
+
+.contenido h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.contenido button {
+  background: blueviolet;
+  border-radius: 20px;
+  border: none;
+  color: whitesmoke;
+  padding: 10px;
+  width: 110px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.titulo-files {
+  font-size: 14px;
+}
+
+.files-books article {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .files-books {
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .files-books {
+    padding-left: 120px;
+  }
+}
+
+/*MOBILE VERSION*/
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+  .files-books {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*courses*/
+.main-courses {
+  margin: 20px;
+}
+
+.cursos-grid {
+  margin: 50px 0;
+  padding: 0 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px #282c34;
+          box-shadow: 2px #282c34;
+}
+
+.cursos-grid article {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  width: 250px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.cursos-grid article:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.cursos-grid article img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.text {
+  padding: 0px 20px 20px;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.text button {
+  background: blueviolet;
+  border-radius: 20px;
+  border: none;
+  color: whitesmoke;
+  padding: 10px;
+  width: 110px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text button {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .cursos-grid {
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .cursos-grid {
+    padding-left: 150px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .cursos-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .cursos-grid {
+    padding: 50px;
+    padding-left: 50px;
+  }
+}
+
+/*MOBILE VERSION*/
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+  .cursos-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .cursos-grid {
+    padding-left: 80px;
+  }
+}
+
+/*Servicios*/
+.slide {
+  background-color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 100px 0px 100px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.slide img {
+  height: 20vh;
+  min-height: 600px;
+  background: no-repeat center center scroll;
+}
+
+.carousel-caption {
+  padding: 0px;
+}
+
+.carousel-item p {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.carousel-item h2 {
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+/*Nosotros*/
+form {
+  padding: 50px 50px 50px 50px;
+  margin: 50px 50px;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+}
+
+.form .action {
+  background-color: black;
+}
+
+/*footer*/
+.py-5 {
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #b665ff), color-stop(25%, #7b55ff), color-stop(50%, #2e43ff), color-stop(75%, #0032d6), to(#0023b0));
+  background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
+  color: whitesmoke;
+  text-align: center;
+  position: static;
+  padding: 10px;
+}
+
+.row {
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.redes-sociales {
+  justify-items: center;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list img:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  background-color: blueviolet;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.list img {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.copyrithg {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */
