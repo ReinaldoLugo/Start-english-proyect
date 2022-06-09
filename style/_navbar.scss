@@ -1,0 +1,34 @@
+.navbar{
+
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
+    .container-fluid >a:hover{
+        all:unset;
+        @extend .navbar-brand;
+        .navbar-toggler-icon {
+            color: whitesmoke;
+            .navbar-brand{
+                color: whitesmoke;
+                font-size: 35px;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 5px 20px;
+                display: inline-block; 
+            }
+        } 
+    }
+
+    .navbar-nav {
+        .nav-link.active, .show>.nav-link {
+            color: #e9ecef;
+            a.active,a:hover{
+                background: blueviolet;
+                transition: .5s;
+                border-radius: 2px;
+            }
+        }
+    }
+    
+
+}

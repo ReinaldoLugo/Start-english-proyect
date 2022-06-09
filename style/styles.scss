@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;1,200&family=Roboto+Serif:ital,wght@0,100;1,100&display=swap');
+@import "navbar";
 
 * {
     margin: 0;
@@ -7,10 +9,8 @@
     list-style: none;
     
 }
-/*Index*/
 
 .tituloUno{
-    margin-top: 20px;
     font-family: 'Nunito', sans-serif;
     font-size: 35px;
     text-align: center;
@@ -20,52 +20,31 @@
     text-decoration: none;
     list-style-type: none;
 }
-
-@media only screen and (min-width: 400px) and (max-width:576px){
-    .ratioVideo{
-        width: 300px;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width:768px){
-    .slide img{
-        height: 5vh;
-        min-height: 300pxs;
-        width: 300px;    
-    }
-}    
-/*Navbar*/
-.navbar{
+.container-fluid{
     padding: 0;
-    margin: 0;
-    .navbar navbar-expand-lg bg-ligh{
-        text-align: end;
-        .navbar-brand{
-            color: whitesmoke;
-            font-size: 35px;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 5px 20px;
-            display: inline-block;
-            a.nav-link.active{
-                font-weight: 200;
-                font-family: 'Nunito', sans-serif;
-                text-decoration: whitesmoke;
-                font-size: 20px;
-                text-transform: uppercase;
-                .nav-link a.active,a:hover{
-                    background: blueviolet;
-                    transition: .5s;
-                }   
-            }
-        }
-    }
+}
+.carousel.slide{
+    padding: 0;
+
+}
+.carousel-inner {
+    margin: -20px 0
 }
 
+.slide{
+    padding: 0;
+}
+.slide img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background: no-repeat center center scroll;
+    
+}
 
-/*Files*/
-
-.files-books{
+.files-books {
     padding-left: 30px;
     padding-left: 30px;
     margin-top: 20px;
@@ -74,8 +53,9 @@
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
     justify-content: space-evenly;
-    box-shadow:  2px #282c34;
-    .files-books article{
+    box-shadow:  2px;
+    color:  #282c34;
+    article{
         background-color:whitesmoke;
         border: none;
         border-radius: 20px;
@@ -84,37 +64,41 @@
         text-align: center;
         transition: transform .3s;
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-        .files-books article:hover{
+        article:hover{
             transform: translateY(5px);
-            .files-books article img{
+            img{
                 width: 100%;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
-                .contenido{
-                    padding: 0px 20px 20px;
-                    .contenido h3{
-                        text-transform: uppercase;
-                        font-size: 18px;
-                        .contenido button{
-                            background: blueviolet;
-                            border-radius: 20px;
-                            border: none;
-                            color:whitesmoke;
-                            padding: 10px;
-                            width: 110px;
-                            font-weight: 600;
-                            text-transform: uppercase;
-                            cursor: pointer;
-                            .titulo-files{
-                                font-size: 14px;
-                            }
-                        }
-                    }
+            }
+        }
+    }
+
+    .contenido {
+        padding: 0px 20px 20px;
+        h2 {
+            text-transform: uppercase;
+            font-size: 18px;
+            button {
+                background: blueviolet;
+                border-radius: 20px;
+                border: none;
+                color:whitesmoke;
+                padding: 10px;
+                width: 110px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                .titulo-files {
+                    font-size: 14px;
                 }
             }
         }
     }
+
+
 }
+
 
 
 
@@ -124,28 +108,30 @@
         grid-template-columns: repeat(2,2fr);
     }
     .files-books{ 
+        padding: 60px;
         padding-left: 120px;
     }
 }  
 
-/*MOBILE VERSION*/
+
 
 @media only screen and (min-width:400px) and (max-width: 767px){
 
     .files-books{
         grid-template-columns: repeat(1,1fr);
     }
-    
+    .files-books{
+        padding-left: 100px;
+    }
+    .tituloUno{
+        margin-left: 0px;
+    }
 }
 
 
-/*courses*/
 
 .main-courses{ 
     margin: 20px;
-
-
-
 }
 .cursos-grid{
     margin: 50px 0;
@@ -164,7 +150,7 @@
     width: 250px;
     transition: transform .3s;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    }
+}
 .cursos-grid article:hover{
     transform: translateY(5px);
     
@@ -192,7 +178,7 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-.text button {
+.text button{
     font-size: 14px;
 }
 
@@ -216,7 +202,7 @@
         padding-left: 50px;
     } 
 }
-/*MOBILE VERSION*/
+
 
 @media only screen and (min-width: 400px)and (max-width: 575px){
 
@@ -229,20 +215,21 @@
 
 }
 
-/*Servicios*/
+
 
 .slide{
-    background-color:transparent;
+    background-color:rgba(0, 0, 0, 0.07);
     align-items: center;
-    padding: 20px 100px 0px 100px;
+    padding: 0;
     font-family: 'Nunito', sans-serif;
 
 }
 .slide img{
-    height: 20vh;
-    min-height: 600px;
+    height: 10vh;
+    min-height: 400px;
     background: no-repeat center center scroll;
 }
+
 .carousel-caption{
     padding: 0px;
 }
@@ -256,7 +243,6 @@
 }   
 
 
-/*Nosotros*/
 form{
     padding: 50px 50px 50px 50px;
     margin: 50px 50px;
@@ -265,12 +251,11 @@ form{
     border-radius: 15px;
 }
 
-.form .action{
+.form.action{
     background-color: black;
 }
 
 
-/*footer*/
 .py-5{
     width: 100%;
     background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
@@ -299,7 +284,7 @@ form{
     cursor: pointer;
 }
 .list img{
-    transition: .3s;
+    transition: .5s;
 }
 
 .copyrithg{
@@ -312,11 +297,3 @@ form{
         grid-template-columns: repeat(2,1fr);
     }
 }
-
-
-
-
-
-
-
-
