@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;1,200&family=Roboto+Serif:ital,wght@0,100;1,100&display=swap");
+@import "_generales";
+@import"_courses-files";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.tituloUno {
+  font-family: 'Nunito', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: #282c34;
+  margin-top: 20px;
+  background-color: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.carousel-inner {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+
+.slide img {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  background: no-repeat center center scroll;
+}
+.carousel-container{
+    
+  .carousel-item {
+      margin: 0;
+
+  }
+  .slide {
+      background-color: rgba(0, 0, 0, 0.07);
+      align-items: center;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      img {
+          max-width: 90%;
+          max-height: 90%;
+          width: auto;
+          height: auto;
+          margin: auto;
+          background: no-repeat center center scroll;
+      }
+  
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.carousel-caption {
+  padding: 0px;
+}
+
+.carousel-item p {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.carousel-item h2 {
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+  .cursos-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .cursos-grid {
+    padding-left: 150px;
+  }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .cursos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cursos-grid {
+    padding: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+  .cursos-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cursos-grid {
+    padding-left: 80px;
+  }
+}
+.slide {
+  background-color: rgba(0, 0, 0, 0.07);
+  align-items: center;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.carousel-caption {
+  padding: 0px;
+}
+
+.carousel-item p {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.carousel-item h2 {
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+form {
+  padding: 50px 50px 50px 50px;
+  margin: 50px 50px;
+  background-color: white;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.form.action {
+  background-color: black;
+}
+
+.py-5 {
+  width: 100%;
+  background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
+  color: whitesmoke;
+  text-align: center;
+  position: static;
+  padding: 10px;
+}
+
+.row {
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.redes-sociales {
+  justify-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.list img:hover {
+  transform: translateY(5px);
+  background-color: blueviolet;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.list img {
+  transition: .5s;
+}
+
+.copyrithg {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
