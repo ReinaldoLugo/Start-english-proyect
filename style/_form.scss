@@ -1,3 +1,5 @@
+@import"_variables.scss";
+
 .sobre-nosotros {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,10 @@
     gap: 10px;
     width: 100%;
     padding: 25px;
-    background-image: radial-gradient(circle at 31.7% -18.3%, #ff71ea 0, #f96be4 16.67%, #dd65da 33.33%, #c05dce 50%, #a355c0 66.67%, #894eb4 83.33%, #7148a7 100%);
+    background-image:$gradient-background;
+    h1{
+        color: whitesmoke;
+    }
     
 
     .form-row {
@@ -16,6 +21,7 @@
         justify-content: center;
         gap: 25px;
         width: 100%;
+        color: whitesmoke;
 
         img, form {
             max-width: 500px;

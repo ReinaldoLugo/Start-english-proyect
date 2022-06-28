@@ -147,7 +147,11 @@
   gap: 10px;
   width: 100%;
   padding: 25px;
-  background-image: radial-gradient(circle at 31.7% -18.3%, #ff71ea 0, #f96be4 16.67%, #dd65da 33.33%, #c05dce 50%, #a355c0 66.67%, #894eb4 83.33%, #7148a7 100%);
+  background-image: linear-gradient(270deg, #b665ff 0, #7b55ff 25%, #2e43ff 50%, #0032d6 75%, #0023b0 100%);
+}
+
+.sobre-nosotros h1 {
+  color: whitesmoke;
 }
 
 .sobre-nosotros .form-row {
@@ -157,6 +161,7 @@
   justify-content: center;
   gap: 25px;
   width: 100%;
+  color: whitesmoke;
 }
 
 .sobre-nosotros .form-row img, .sobre-nosotros .form-row form {
@@ -286,6 +291,11 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 100px;
+}
+
+.w-100 {
+  display: flex;
+  align-items: center;
 }
 
 .container-precios {

@@ -135,14 +135,15 @@ body {
 
   }
   .w-100{
-     
+    display: flex;
+    align-items: center;
   }
 
   .container-precios{
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 100px 200px 400px 200px;
-    background-image: radial-gradient(circle at 31.7% -18.3%, #ff71ea 0, #f96be4 16.67%, #dd65da 33.33%, #c05dce 50%, #a355c0 66.67%, #894eb4 83.33%, #7148a7 100%);
+    background-image: $gradient-image;
     
   }  
   .card-body{
@@ -152,4 +153,6 @@ body {
     max-width: 100%;
     max-height: 100%;
   }
+
  
+  
