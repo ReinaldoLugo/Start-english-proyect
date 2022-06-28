@@ -15,17 +15,17 @@
             display: flex;
             justify-content: center;
 
-            img{
-                transition: .5s;
-            }
-
-            .active:hover {
-                transform: translateY(5px);
-                background-color: blueviolet;
+            .active{
+                transition: transform .3s;
+                
                 border-radius: 50%;
                 cursor: pointer;
-            }
 
+                &:hover{
+                    transform: translateY(5px);
+                    background-color: blueviolet;
+                }
+            }
         }
     }
 

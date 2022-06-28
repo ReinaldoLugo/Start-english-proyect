@@ -1,0 +1,25 @@
+.sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 25px;
+    background-image: radial-gradient(circle at 31.7% -18.3%, #ff71ea 0, #f96be4 16.67%, #dd65da 33.33%, #c05dce 50%, #a355c0 66.67%, #894eb4 83.33%, #7148a7 100%);
+    
+
+    .form-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+
+        img, form {
+            max-width: 500px;
+            flex-grow: 1;
+        }
+    }
+}

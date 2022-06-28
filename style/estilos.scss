@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;1,200&family=Roboto+Serif:ital,wght@0,100;1,100&display=swap");
 @import "_generales";
-@import "_courses";
-@import "_files";
 @import "_footer";
-@import "_media-queries";
+@import "_cards-flex";
+@import "_form";
 
 * {
   margin: 0;
@@ -11,6 +10,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  min-height: 95vh;
 }
 
 .tituloUno {
@@ -107,23 +110,46 @@
 
   .carousel-item p {
     font-size: 18px;
-    color: whitesmoke;
+    color:#282c34;
   }
 
   .carousel-item h2 {
-    color: whitesmoke;
+    color:#282c34;
     font-size: 25px;
   }
 
-  form {
-    padding: 50px 50px 50px 50px;
-    margin: 50px 50px;
-    background-color: white;
-    justify-content: center;
-    border-radius: 15px;
+.container-fluid-carousel{
+  padding-bottom: 100px;
   }
 
-  .form.action {
-    background-color: black;
+  .col{
+    flex-direction:column;
+    flex-grow: 1;
   }
 
+  .row-featurette{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 100px;
+    
+
+  }
+  .w-100{
+     
+  }
+
+  .container-precios{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px 200px 400px 200px;
+    background-image: radial-gradient(circle at 31.7% -18.3%, #ff71ea 0, #f96be4 16.67%, #dd65da 33.33%, #c05dce 50%, #a355c0 66.67%, #894eb4 83.33%, #7148a7 100%);
+    
+  }  
+  .card-body{
+    font-size: large;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+ 
