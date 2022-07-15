@@ -1,0 +1,31 @@
+@import"_variables.scss";
+
+.sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 25px;
+    background-image:$gradient-background;
+    h1{
+        color: whitesmoke;
+    }
+    
+
+    .form-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+        color: whitesmoke;
+
+        img, form {
+            max-width: 500px;
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import"_variables.scss";
+
+.py-5 {
+    max-width: 100%;
+    background-image:$gradient-background;
+    color: whitesmoke;
+    text-align: center;
+    position: static;
+    padding: 10px;
+
+    .redes-sociales {
+        justify-items: center;
+
+        .list {
+            display: flex;
+            justify-content: center;
+
+            .active{
+                transition: transform .3s;
+                
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:hover{
+                    transform: translateY(5px);
+                    background-color: blueviolet;
+                }
+            }
+        }
+    }
+
+    .copyrithg {
+        justify-content: center;
+    }
+
+}
+
+.row {
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
